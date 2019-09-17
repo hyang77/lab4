@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title><bold>Volunteer Form</bold></title>
+  </head>
+  <body>
+	<h2>Volunteer Form</h2>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+	<fieldset>
+		<legend><bold>My Info</bold></legend>
+		<label for="first_name_field">First Name:</label>
+		<input type="text" name="first_name_field" id="first_name_field"autofocus required><br><br>
+		<label for="last_name_field">Last Name:</label>
+		<input type="text" name="last_name_field" id="last_name_field" required><br><br>
+		<label for="phone_field">Phone Number:</label>
+		<input type="text" name="phone_field" id="phone_field" required><br><br>
+		<label for="email_field">Email Address:</label>
+		<input type="email" name="email_field" id="email_field" required><br><br>
+		Gender:
+		<input type="radio" name="gender_field" value="male">Male
+		<input type="radio" name="gender_field" value="femal">Female<br><br>
+		Age:
+		<select name="age_field">
+			<option value="under 18">under 18</option>
+			<option value="18 - 24">18 - 24</option>
+			<option value="24 - 34">24 - 34</option>
+			<option value="35 - 44">35 - 44</option>
+			<option value="45 - 54">45 - 54</option>
+			<option value="55 - 64">55 - 64</option>
+			<option value="64 and over">64 and over</option>
+		</select>
+	</fieldset><br>
+	<fieldset>
+		<legend><bold>My Availability</bold></legend>
+		Days Available:<br>
+		<input type="checkbox" name="available_field[]" value="sunday">Sunday<br>
+		<input type="checkbox" name="available_field[]" value="monday">Monday<br>
+		<input type="checkbox" name="available_field[]" value="tuesday">Tuesday<br>
+		<input type="checkbox" name="available_field[]" value="wednesday">Wednesday<br>
+		<input type="checkbox" name="available_field[]" value="thursday">Thursday<br>
+		<input type="checkbox" name="available_field[]" value="friday">Friday<br>
+		<input type="checkbox" name="available_field[]" value="saturday">Saturday<br>
+		Any Comments?<br>
+		<textarea name="comments_field">
+		</textarea>
+	</fieldset><br>
+	<input type="submit" id="submit" value="Send Me">
+	<input type="hidden" name="hidden_field" value="hyang77">
+	</form>
+  </body>
